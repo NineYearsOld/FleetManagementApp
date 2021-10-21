@@ -16,7 +16,7 @@ namespace Bussiness_Layer.Repositories {
 
 
         public void CreateBestuurder(string naam, string voornaam, DateTime geboorteDatum, string rijksregisternr, string rijbewijs) {
-            if (naam != null && voornaam != null && rijbewijs != null && Validatie(rijksregisternr)) {
+            if (naam != null && voornaam != null && rijbewijs != null && ValidatieRijkregisternummer(rijksregisternr)) {
 
                 if (!BestuurdersLijst.ContainsKey(rijksregisternr)) {
                     Bestuurder b = new Bestuurder(naam, voornaam, geboorteDatum, rijksregisternr, rijbewijs);
