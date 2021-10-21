@@ -15,5 +15,26 @@ namespace Bussiness_Layer.Repositories {
 
         public Dictionary<string, Voertuig> VoertuigLijst { get; private set; }
         public List<string> Nummerplaten { get; private set; }
+
+
+        public void CreateVoertuig() {
+
+        }
+
+        public void DeleteVoertuig(string chassisnummer) {
+            if (VoertuigLijst.ContainsKey(chassisnummer)) {
+                VoertuigLijst.Remove(chassisnummer);
+            } else {
+
+            }
+        }
+
+        public void UpdateVoertuig() {
+
+        }
+
+        public Voertuig ToonDetails() {
+
+        }
     }
 }

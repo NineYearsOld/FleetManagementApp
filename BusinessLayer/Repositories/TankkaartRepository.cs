@@ -12,6 +12,30 @@ namespace Bussiness_Layer.Repositories {
         }
 
         public Dictionary<int, Tankkaart> TankkaartLijst { get; private set; }
+
+        public void CreateTankkaart(int kaartnummer, DateTime geldigheidsdatum) {
+            if (!TankkaartLijst.ContainsKey(kaartnummer)) { 
+            Tankkaart tk = new Tankkaart(kaartnummer, geldigheidsdatum);
+            } else {
+
+            }
+        }
+
+        public void DeleteTankkaart(int kaartnummer) {
+            if (TankkaartLijst.ContainsKey(kaartnummer)) {
+                TankkaartLijst.Remove(kaartnummer);
+            } else {
+
+            }
+        }
+
+        public void UpdateTankkaart() {
+
+        }
+
+        public Tankkaart ToonDetails(int kaartnummer) {
+
+        }
     }
 }
 
