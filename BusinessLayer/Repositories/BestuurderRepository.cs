@@ -28,7 +28,7 @@ namespace Bussiness_Layer.Repositories {
             }
         }
 
-        public static bool Validatie(string rijksregisternr) {
+        public static bool ValidatieRijkregisternummer(string rijksregisternr) {
             if (rijksregisternr == null) {
                 return false;
             } else if (rijksregisternr.Length != 11) {

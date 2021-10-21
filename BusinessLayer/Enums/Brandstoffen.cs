@@ -6,6 +6,6 @@ using System.Threading.Tasks;
 
 namespace Bussiness_Layer.Enums {
     public enum Brandstoffen {
-        Benzine, Diesel, HybrideBenzine, HybrideDiesel, Elektrisch
+        Benzine, Diesel, LPG, Elektrisch
     }
 }
