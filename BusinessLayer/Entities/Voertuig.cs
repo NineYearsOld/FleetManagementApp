@@ -7,7 +7,16 @@ using Bussiness_Layer.Enums;
 
 namespace Bussiness_Layer.Entities {
     public class Voertuig {
-
+        public Voertuig(string merk, string model, string chassisNummer, string nummerplaat, Brandstoffen brandstof, string typeWagen, Bestuurder bestuurder)
+        {
+            Merk = merk;
+            Model = model;
+            ChassisNummer = chassisNummer;
+            Nummerplaat = nummerplaat;
+            Brandstof = brandstof;
+            TypeWagen = typeWagen;
+            Bestuurder = bestuurder;
+        }
 
         public string Merk { get; private set; }
         public string Model { get; private set; }

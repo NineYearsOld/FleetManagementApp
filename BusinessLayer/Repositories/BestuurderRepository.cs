@@ -43,5 +43,28 @@ namespace Bussiness_Layer.Repositories {
                 }
             }
         }
+
+        public  void DeleteBestuurder(Bestuurder bestuurder)
+        {
+            if(bestuurder != null)
+            {
+
+                BestuurdersLijst.Remove(bestuurder.RijksregisterNummer);
+            }
+        }
+
+        public void UpdateBestuurder(Bestuurder bestuurder)
+        {
+            if(bestuurder != null)
+            {
+                BestuurdersLijst[bestuurder.RijksregisterNummer] = bestuurder;
+            }
+        }
+
+        public Bestuurder ToonDetails(string bestuurderN)
+        {
+            Bestuurder bestuurder = BestuurdersLijst.ContainsKey;
+            return bestuurder;
+        }
     }
 }
