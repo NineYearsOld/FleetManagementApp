@@ -63,7 +63,7 @@ namespace Bussiness_Layer.Repositories {
 
         public Bestuurder ToonDetails(string bestuurderN)
         {
-            Bestuurder bestuurder = BestuurdersLijst.ContainsKey;
+            Bestuurder bestuurder = (Bestuurder)BestuurdersLijst.Select(a => a.Value).Where(a=>a.RijksregisterNummer == bestuurderN);
             return bestuurder;
         }
     }
