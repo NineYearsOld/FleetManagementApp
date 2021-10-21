@@ -17,8 +17,15 @@ namespace Bussiness_Layer.Repositories {
         public List<string> Nummerplaten { get; private set; }
 
 
-        public void CreateVoertuig() {
+        public void CreateVoertuig(string merk, string model, string chassisNummer, string nummerplaat, Brandstoffen brandstof, string typeWagen) {
+            if (VoertuigLijst.ContainsKey(chassisNummer)) {
 
+            }else if (Nummerplaten.Contains(nummerplaat)) {
+
+            } else {
+                Voertuig v = new Voertuig(merk, model, chassisNummer, nummerplaat,brandstof,typeWagen);
+                VoertuigLijst.Add(v);
+            }
         }
 
         public void DeleteVoertuig(string chassisnummer) {
@@ -33,8 +40,8 @@ namespace Bussiness_Layer.Repositories {
 
         }
 
-        public Voertuig ToonDetails() {
-
+        public Voertuig ToonDetails(string chassisnummer) {
+                return VoertuigLijst[chassisnummer];
         }
     }
 }
