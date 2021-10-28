@@ -20,7 +20,8 @@ namespace Bussiness_Layer.Repositories {
 
                 if (!BestuurdersLijst.ContainsKey(rijksregisternr)) {
                     Bestuurder b = new Bestuurder(naam, voornaam, geboorteDatum, rijksregisternr, rijbewijs);
-
+                    // DB Create
+                    // Id uit db invullen
                     BestuurdersLijst.Add(rijksregisternr, b);
                 } else { }
             } else {
@@ -48,7 +49,7 @@ namespace Bussiness_Layer.Repositories {
         {
             if(bestuurder != null)
             {
-
+                // DB Delete
                 BestuurdersLijst.Remove(bestuurder.RijksregisterNummer);
             }
         }
