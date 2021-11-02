@@ -5,9 +5,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Bussiness_Layer.Repositories {
-    public class TankkaartRepository {
-        public TankkaartRepository() {
+namespace Bussiness_Layer.Controllers {
+    public class TankkaartController {
+        public TankkaartController() {
             TankkaartLijst = new Dictionary<int, Tankkaart>();
         }
 
