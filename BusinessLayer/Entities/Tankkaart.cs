@@ -15,7 +15,7 @@ namespace Bussiness_Layer.Entities {
         public int KaartNummer { get; private set; }
         public DateTime GeldigheidsDatum { get; private set; }
         public int Pincode { get; private set; }
-        public Brandstoffen Brandstof { get; private set; }
+        public List<Brandstoffen> Brandstoffen { get; private set; }
         public Bestuurder Bestuurder { get; private set; }
     }
 }

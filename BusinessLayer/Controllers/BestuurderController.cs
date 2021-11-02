@@ -5,9 +5,9 @@ using System.Text;
 using System.Threading.Tasks;
 using Bussiness_Layer.Entities;
 
-namespace Bussiness_Layer.Repositories {
-    public class BestuurderRepository {
-        public BestuurderRepository() {
+namespace Bussiness_Layer.Controllers {
+    public class BestuurderController {
+        public BestuurderController() {
             BestuurdersLijst = new Dictionary<string, Bestuurder>();
         }
 
