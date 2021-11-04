@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Bussiness_Layer.Enums {
+namespace BussinessLayer.Enums {
     public enum Brandstoffen {
         Benzine, Diesel, HybrideBenzine, HybrideDiesel, LPG, Elektrisch, CNG
     }

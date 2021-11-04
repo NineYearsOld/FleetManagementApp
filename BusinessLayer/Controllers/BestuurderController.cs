@@ -3,9 +3,9 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using Bussiness_Layer.Entities;
+using BussinessLayer.Entities;
 
-namespace Bussiness_Layer.Controllers {
+namespace BussinessLayer.Controllers {
     public class BestuurderController {
         public BestuurderController() {
             BestuurdersLijst = new Dictionary<string, Bestuurder>();

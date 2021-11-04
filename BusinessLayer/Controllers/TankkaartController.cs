@@ -5,7 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Bussiness_Layer.Controllers {
+namespace BussinessLayer.Controllers {
     public class TankkaartController {
         public TankkaartController() {
             TankkaartLijst = new Dictionary<int, Tankkaart>();

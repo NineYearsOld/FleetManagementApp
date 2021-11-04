@@ -3,8 +3,10 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using BusinessLayer.Exceptions;
+using BussinessLayer.Controllers;
 
-namespace Bussiness_Layer.Entities {
+namespace BussinessLayer.Entities {
     public class Bestuurder {
         public Bestuurder(string naam, string voornaam, DateTime geboorteDatum, string rijksregisterNummer, string rijbewijs) {
             Naam = naam;
@@ -27,19 +29,86 @@ namespace Bussiness_Layer.Entities {
         public Voertuig Voertuig { get; private set; }
         public Tankkaart Tankkaart { get; private set; }
 
-        public void Update(string naam, string voornaam, int? postcode, string? gemeente, string? straat, string? huisnummer, string rijkregisternummer, string rijbewijs, Voertuig? voertuig, Tankkaart? tankkaart) {
-            if (naam != null && voornaam != null && rijkregisternummer != null && rijbewijs != null) { // UNF
+
+        // Update functies hier om private setters te houden
+        public void UpdateNaam(string naam) {
+            if (naam != null && Naam != naam) {
                 Naam = naam;
+            } else {
+                
+            }
+        }
+
+        public void UpdateVoornaam(string voornaam) {
+            if (voornaam != null && Voornaam != voornaam) {
                 Voornaam = voornaam;
-                RijksregisterNummer = rijkregisternummer;
-                Rijbewijs = rijbewijs;
-            } else { }
-            Postcode = postcode;
-            Gemeente = gemeente;
-            Straat = straat;
-            Huisnummer = huisnummer;
-            Voertuig = voertuig;
-            Tankkaart = tankkaart;
+            } else {
+
+            }
+        }
+
+        public void UpdatePostcode(int postcode) {
+            if (Postcode != postcode) {
+                Postcode = postcode;
+            } else {
+
+            }
+        }
+
+        public void UpdateGemeente(string gemeente) {
+            if (Gemeente != gemeente) {
+                Gemeente = gemeente;
+            } else {
+
+            }
+        }
+
+        public void UpdateStraat(string straat) {
+            if (Straat != straat) {
+                Straat = straat;
+            } else {
+
+            }
+        }
+
+        public void UpdateHuisnummer(string huisnummer) {
+            if (Huisnummer != huisnummer) {
+                Huisnummer = huisnummer;
+            } else {
+
+            }
+        }
+
+        public void UpdateRijksregisternummer(string rijksregisternummer) {
+            if (rijksregisternummer != null && RijksregisterNummer != rijksregisternummer && BestuurderController.ValidatieRijkregisternummer(rijksregisternummer)) {
+                RijksregisterNummer = rijksregisternummer;
+            } else {
+
+            }
+        }
+
+        public void UpdateRijbewijs() {
+            if (true) {
+
+            } else {
+
+            }
+        }
+
+        public void UpdateVoertuig(Voertuig voertuig) {
+            if (true) {
+
+            } else {
+
+            }
+        }
+
+        public void UpdateTankkaart(Tankkaart tankkaart) {
+            if (true) {
+
+            } else {
+
+            }
         }
     }
 }

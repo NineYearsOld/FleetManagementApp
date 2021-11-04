@@ -3,9 +3,9 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using Bussiness_Layer.Enums;
+using BussinessLayer.Enums;
 
-namespace Bussiness_Layer.Entities {
+namespace BussinessLayer.Entities {
     public class Voertuig {
         public Voertuig(string merk, string model, string chassisNummer, string nummerplaat, List<Brandstoffen> brandstoffen, WagenTypes typeWagen)
         {

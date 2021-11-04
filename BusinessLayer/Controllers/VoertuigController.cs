@@ -1,12 +1,12 @@
-﻿using Bussiness_Layer.Entities;
-using Bussiness_Layer.Enums;
+﻿using BussinessLayer.Entities;
+using BussinessLayer.Enums;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Bussiness_Layer.Controllers {
+namespace BussinessLayer.Controllers {
     public class VoertuigController {
         // private IVoertuigRepository;
 

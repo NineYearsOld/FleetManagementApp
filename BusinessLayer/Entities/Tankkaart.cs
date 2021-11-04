@@ -1,11 +1,11 @@
-﻿using Bussiness_Layer.Enums;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using BussinessLayer.Enums;
 
-namespace Bussiness_Layer.Entities {
+namespace BussinessLayer.Entities {
     public class Tankkaart {
         public Tankkaart(int kaartNummer, DateTime geldigheidsDatum) {
             KaartNummer = kaartNummer;
@@ -17,5 +17,7 @@ namespace Bussiness_Layer.Entities {
         public int Pincode { get; private set; }
         public List<Brandstoffen> Brandstoffen { get; private set; }
         public Bestuurder Bestuurder { get; private set; }
+
+
     }
 }
