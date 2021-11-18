@@ -1,13 +1,11 @@
-﻿using BussinessLayer.Entities;
+﻿using BusinessLayer.Entities;
+using BusinessLayer.Interfaces;
 using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
-namespace BussinessLayer.Controllers {
-    public class TankkaartController {
-        public TankkaartController() {
+namespace BusinessLayer.Repositories {
+    public class TankkaartRepository: ITankkaartRepository {
+        public TankkaartRepository() {
             TankkaartLijst = new Dictionary<int, Tankkaart>();
         }
 
@@ -32,7 +30,7 @@ namespace BussinessLayer.Controllers {
             }
         }
 
-        public void UpdateTankkaart() { // Nog uit te werken
+        public void UpdateTankkaart(int kaartnummer) { // Nog uit te werken
 
         }
 
