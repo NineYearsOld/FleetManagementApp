@@ -1,12 +1,12 @@
-﻿using BussinessLayer.Entities;
-using BussinessLayer.Enums;
+﻿using BusinessLayer.Entities;
+using BusinessLayer.Enums;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace BussinessLayer.Controllers {
+namespace BusinessLayer.Controllers {
     public class VoertuigController {
         // private IVoertuigRepository;
 
@@ -20,7 +20,7 @@ namespace BussinessLayer.Controllers {
         public List<string> Nummerplaten { get; private set; }
 
 
-        public void CreateVoertuig(string merk, string model, string chassisNummer, string nummerplaat, List<Brandstoffen> brandstoffen, WagenTypes typeWagen) {
+        public void CreateVoertuig(string merk, string model, string chassisNummer, string nummerplaat, Brandstoffen brandstoffen, WagenTypes typeWagen) {
             if (VoertuigLijst.ContainsKey(chassisNummer)) { // Chassis nummer moet uniek zijn
 
             } else if (Nummerplaten.Contains(nummerplaat)) { // Nummerplaat moet uniek zijn

@@ -1,6 +1,6 @@
 using BusinessLayer.Exceptions;
-using BussinessLayer.Controllers;
-using BussinessLayer.Entities;
+using BusinessLayer.Controllers;
+using BusinessLayer.Entities;
 using System;
 using System.Collections.Generic;
 using Xunit;
@@ -31,7 +31,8 @@ namespace UnitTests {
             string voornaam2 = null;
             DateTime geboortedatum = new DateTime(1990,8,24);
             string rijksregister = "12345678958";
-            List<string> rijbewijs = new List<string>();
+            // List<string> rijbewijs = new List<string>();
+            string rijbewijs = "";
 
             BestuurderController bc = new BestuurderController();
 
@@ -45,7 +46,7 @@ namespace UnitTests {
             Assert.Empty(bc.BestuurdersLijst);
 
             // lege naam
-            rijbewijs.Add("B");
+            rijbewijs = "B";
             bc.CreateBestuurder(naam2, voornaam, geboortedatum, rijksregister, rijbewijs);
             Assert.Empty(bc.BestuurdersLijst);
 

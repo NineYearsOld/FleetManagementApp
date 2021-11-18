@@ -1,11 +1,11 @@
-﻿using BussinessLayer.Entities;
+﻿using BusinessLayer.Entities;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace BussinessLayer.Controllers {
+namespace BusinessLayer.Controllers {
     public class TankkaartController {
         public TankkaartController() {
             TankkaartLijst = new Dictionary<int, Tankkaart>();

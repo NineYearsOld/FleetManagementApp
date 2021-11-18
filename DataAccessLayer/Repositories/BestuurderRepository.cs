@@ -72,6 +72,7 @@ namespace DataAccessLayer.Repositories {
                     finally
                     {
                         connection.Close();
+                        
                     }
 
                 }

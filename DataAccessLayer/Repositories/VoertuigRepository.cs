@@ -15,7 +15,7 @@ namespace BusinessLayer.Repositories {
         public List<string> Nummerplaten { get; private set; }
 
 
-        public void CreateVoertuig(string merk, string model, string chassisNummer, string nummerplaat, Brandstoffen brandstof, string typeWagen) {
+        public void CreateVoertuig(string merk, string model, string chassisNummer, string nummerplaat, Brandstoffen brandstof, WagenTypes typeWagen) {
             if (VoertuigLijst.ContainsKey(chassisNummer)) { // Chassis nummer moet uniek zijn
 
             } else if (Nummerplaten.Contains(nummerplaat)) { // Nummerplaat moet uniek zijn
